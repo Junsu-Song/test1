@@ -1,0 +1,14 @@
+#! /usr/bin/env python
+#-*-coding: utf-8-*-
+
+seq1 = "ATGTTATAG"
+
+for i in seq1[:3]:
+    print(i, end = '')
+    print()
+for j in seq1[3:6]:
+    print(j, end = '')
+    print()
+for k in seq1[6:]:
+    print(k, end = '\n')
+
