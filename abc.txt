@@ -1,0 +1,5 @@
+print("New", "Hello, "Bye")
+
+print("NOOOOOOOOO")
+
+print("Are you okey")
