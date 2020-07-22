@@ -2,8 +2,9 @@ import sys
 
 class FASTA:
     def __init__(self, file_name: str):
-        self.file_name = ""
+        self.file_name = file_name
         self.count = {}
+        self.length = 0
 
     def count_base(self):
         with open(self.file_name, 'r') as handle:
@@ -23,12 +24,12 @@ class FASTA:
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print(f"#usage: python {sys.argv[0]} [string]")
+        print(f"#usage: python {sys.argv[0]} [fasta]")
         sys.exit()
 
     file_name = sys.argv[1]
     t = FASTA(file_name)
     t.count_base()
     print(t.count)
-    t.get_length
+    t.get_length()
     print(t.length)

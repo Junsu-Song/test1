@@ -19,7 +19,7 @@ with open(f, 'r') as handle:
                 d[s] += 1
             else:
                 d[s] = 1
-
+print(d)
 total = 0
 for k,v in d.items():
     total += v
